@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<title>Zap100プロジェクト</title>
+		<meta name="keywords" content="zap100" />
+		<meta name="description" content="概要" />
+		<style>
+			body {
+				margin:0px;
+				padding:0px;
+				text-align:center;
+			}
+			#outer {
+				font-size:13px;
+				line-height:150%;
+				text-align:left;
+			}
+			#header {
+				text-align:left;
+				background-color:#214555;
+			}
+			#head-inner {
+				margin:0px auto 0px auto;
+				padding:10px 0px 0px 0px;
+				width:800px;
+				background-color:#214555;
+				padding:10px 25px 10px;
+			}
+			.description {
+				padding-left:10px;
+				line-height:120%;
+				color:#ffffff;
+				font-size:16px;
+			}
+			#contents {
+				margin:0px auto 0px auto;
+				padding:30px 0px 0px 0px;
+				width:800px;
+				line-height:150%;
+				color:#333333;
+				font-size:15px;
+			}
+			ul {
+				margin: 0 0 0 1em;
+				padding: 0;
+			}
+			li {
+				list-style:disk; 
+			}
+
+			P {
+				margin:1em 0 1em 0;
+				line-height:150%;
+			}
+			img{
+				border:0px;
+			}
+			hr {
+				border-width: 1px 0px 0px 0px;
+				border-style: solid;
+				border-color: #cccccc;
+				height: 1px;
+			}
+			a{
+				font-weight:normal;
+			}
+			h1 {
+				font-size:30px;
+				font-weight:bold;
+				text-align:left;
+				padding:30px 0px 0px 10px;
+				margin:0px;
+				color:#ffffff;
+			}
+			h1 a{
+				font-weight:bold;
+				color:#ffffff;
+				text-decoration:none;
+			}
+			h1 a:hover{
+				font-weight:bold;
+				color:#ffffff;
+				text-decoration:underline;
+			}
+			h2 {
+				font-size:20px;
+				margin:0px 0px 0px 0px;
+				padding:4px 0px 4px 7px;
+				border-bottom:2px solid #999999;
+			}
+			.green {
+				color:#008800;
+				font-weight:bold;
+			}
+			#middle {
+				margin:0px auto 0px auto;
+				padding:10px 0px 20px 0px;
+				width:800px;
+			}
+			.side-title {
+				width:540px;
+				padding:4px 10px 4px 10px;
+				background-color:#f1f1f1;
+				font-weight:bold;
+				border:1px solid #999999;
+				margin-bottom:10px;
+			}
+			.side {
+				margin:0px 0px 10px 0px;
+				padding:2px 8px 8px 7px;
+				line-height:150%;
+			}
+			ul {
+				margin: 0 0 0 1em;
+				padding: 0;
+			}
+			li {
+				list-style:disk; 
+			}
+
+			#footer {
+				font-size:12px;
+				height:50px;
+				clear:left;
+				text-align:center;
+			}
+			blockquote{
+				border:1px solid #ccc;
+				padding:5px;
+				margin:10px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div id="outer">
+			<div id="header">
+				<div id="head-inner">
+					<h1>Zap100プロジェクト</h1>
+					<p class="description">１００年後も使える（使われる）高速・巨大・低コストアーカイブの普及</p>
+				</div>
+			</div>
+			<div id="contents">
+				<h2>Zap100プロジェクトとは</h2>
+				<p>
+現在は情報が満ち溢れる一方、その十分な利活用はむしろ難しくなったとも言える状況です。
+特に膨大に積み上がった観測データ、IoTデータなどのビッグデータは提供することすら容易ではありません。データ利用者側はこのようなビッグデータを万難を排して入手することができたとしても、それらを自分の目的に合わせて組み合わせることが困難で、利用どころではありません。<br>
+Zap100プロジェクトはこのような問題を解決し、巨大な情報群を高速かつ、低コストで利用できるような新データベースシステムの展開を行うプロジェクトです。<br>
+<br>
+
+2019年度、JAXA、ターボデータラボラトリー、エスペラントシステムで「巨大時系列データの高速アクセスに関する（共同）研究」を始めました。基盤となる技術は従来よりターボデータラボラトリー、エスペラントシステムが開発してきたZap-Over技術(表形式ビックデータをファイル化しインターネット上のファイルサーバに置くだけでユーザが高速検索できるようにする技術）です。共同研究によりの実用性が大きく高まり、より実用的なソフトウェアとして成長しはじめました。<br>
+<br>
+
+2020年度、目標をより具体的に定義し直しました。「100年後も使える高速・巨大・低コストアーカイブの普及」です。きっかけはJAXAや国立天文台などが蓄積する貴重な観測ビッグデータを半永久的に使える形で保持したいという強いニーズとそれを実現できるよいテクノロジーが存在していないことが明らかになったことでした。<br>
+2020年度は、データベースの専門家やデータサイエンティストにも参加頂き、Zap-Over技術の論文投稿やさらなる機能の改善を行っています。<br>
+<br>
+
+当プロジェクトはとりわけアーカイブとして蓄積される時系列のビッグデータに注力しています。このようなビッグデータは、分析や統計をはじめ、AIやIoT、ブロックチェーンなど様々な目的に利用されるべきものですが、すでに述べたようにそれらを共有し、組み合わせ、活用する技術が未成熟であったため、活用は困難でした。<br>
+Zap-Over技術はこのような課題を解決します。インターネットを介してだれもがビッグデータに気軽に接続し、それらを組み合わせて自分の目的に合ったビッグデータを作成できるようにします。<br>
+<br>
+
+				</p>
+
+				<h2>Zap100プロジェクトの活動方針</h2>
+				<p>
+世界の片隅に細々と灯る炎はすぐに立ち消えてしまいます。貴重な観測データを半永久的に利用可能にしようとするZap100プロジェクトが100年続くためには、Zap-Over技術が世界中のたくさんの人々に利用される必要があります。そのためには技術開発の継続と同時に社会展開の努力を続ける必要がありますが、厳しい競争と軋轢に巻き込まれる企業活動の形態での社会展開では時間と労力がかかり、成功の確率も高くはありません。そこでZap100プロジェクトはオープンで非営利でアカデミックな形で活動し、速やかに目的とする持続性とその条件である世界的広がりを達成しようとしています。<br>
+<br>
+				</p>
+
+
+				<h3>◆利用者人口の確保</h3>
+				<p>
+優れた技術であっても、その利用者人口が小さければ継続しません。<br>
+まずはJAXAで使われ、次に国立天文台、NASAなどの天文分野で使われること。<br>
+さらに天文分野に限らず、IoTやブロックチェーンなどでも使われること。<br>
+そしてそれ以外の様々な領域でも使われることが必要です。<br>
+<br>
+				</p>
+
+				<h3>◆標準化の推進</h3>
+				<p>
+データフォーマットやソフトウェア（エンジン部分）が乱立してしまっては、やはり使えなくなってしまいます。<br>
+最初の２０年間は特許群でプロテクトを行い、同時にIEEEなどで標準規格になることを目指します。<br>
+<br>
+				</p>
+
+				<h3>◆100年以上続くサポート</h3>
+				<p>
+その時々のソフトウェア、システムに接続するインターフェイスの提供など、どう継続して行くのか、利用者をどうサポートして行くのか、など、幅広な意見を得ながら進めていきます。<br>
+<br>
+				</p>
+
+				<h3>◆利用文化の継続的な醸成</h3>
+				<p>
+貴重なデータを様々に活用する技法・文化を育てて行かなければなりません。<br>
+こちらも幅広に意見を得ながら進めていきます。<br>
+<br>
+<br>
+
+				</p>
+
+				<h2>異能vationに採択</h2>
+				<p>
+Zap100プロジェクトのメンバーの一人である古庄 晋二が、<a href="https://www.inno.go.jp/result/2020/hakai/challenger/"> 異能vation</a>に採択されました。<br>Zap100プロジェクトと、異能vationでの挑戦課題（開発した技術の社会展開の試みとその記録を残す）を推進していきます。<br>
+<br>
+				</p>
+
+
+			</div>
+
+
+
+
+			<div id="middle">
+				<div class="side-title">Menu</div>
+				<div class="side">
+					<ul>
+					<li><a href="Zap-OverGaiyouRev3.pdf">Zap-Over概要説明 rev3</a></li>
+					<li><a href="Read Only データベース rev8.pdf">2020/2/14 宇宙科学情報解析シンポジウムでの発表</a></li>
+					</ul>
+				</div>
+			</div>
+
+<!--
+			<div id="middle">
+				<div class="side-title">Menu</div>
+				<div class="side">
+					<ul>
+					<li>記事ページへのリンク</li>
+					<li>記事ページへのリンク</li>
+					</ul>
+				</div>
+			</div>
+-->
+<br>
+<br>
+<hr>
+			<div id="footer">© 2020 Zap100 プロジェクト</div>
+		</div>
+	</body>
+</html>
+
